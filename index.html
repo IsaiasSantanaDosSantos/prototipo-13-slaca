@@ -44,7 +44,7 @@
   </head>
   <body>
     <div class="container-fluid all-page">
-      <aside class="md-2">
+      <aside>
         <div class="side-bar">
           <div class="event-name w-100">
             <div class="content"><h3>SLACA 2019</h3></div>
@@ -68,19 +68,54 @@
               class="collapse navbar-collapse justify-content-end"
               id="navbar-link"
             >-->
-              <div class="navbar-nav">
-                <a href="#" id="apresentaition-menu">Apresentação</a>
-                <a href="#" id="committee-menu">Comitê</a>
-                <a href="#" id="author-menu">Autores</a>
-                <a href="#" id="themes-menu">Eixos temáticos</a>
-                <a href="#" id="works-menu">Trabalhos</a>
-                <a href="#" id="contact-menu">Contato</a>
-              </div>
+            <div class="navbar-nav">
+              <a href="#" id="apresentaition-menu">Apresentação</a>
+              <a href="#" id="committee-menu">Comitê</a>
+              <a href="#" id="author-menu">Autores</a>
+              <a href="#" id="themes-menu">Eixos temáticos</a>
+              <a href="#" id="works-menu">Trabalhos</a>
+              <a href="#" id="contact-menu">Contato</a>
+            </div>
           </nav>
         </div>
       </aside>
-      <header class="md-10 w-100">
-        
+      <header>
+        <div id="initial-text">
+          <p id="theme-text">
+            Anais do Simpósio Latino Americano de Ciências de Alimentos
+          </p>
+          <p id="title">
+            Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+          </p>
+          <p id="post-id">ISSN: 1234-5678</p>
+        </div>
+        <div id="language-button">
+          <img
+            src="./img/language-image.svg"
+            alt="Linguage image"
+            style="padding-bottom: 5px"
+          />
+          <select
+            name="linguage"
+            id="linguage"
+            style="border: none; background-color: #fdf1eb"
+          >
+            <option default value="Português-BR">PT,BR</option>
+            <option value="Português-PT">PT,PT</option>
+            <option value="Inglês-UK">IG,UK</option>
+            <option value="Inglês-US">IG,US</option>
+          </select>
+        </div>
+        <div id="login">
+          <div class="login-texts">
+            <div id="greetings"><p>Bem vindo!</p></div>
+            <div id="email"><p>alguem12@galoascience.com</p></div>
+          </div>
+          <div class="login-images">
+            <div id="profile-image"></div>
+            <div id="notification-image"><p id="notification-number">2</p></div>
+          </div>
+        </div>
       </header>
     </div>
     <script src="js/script.js"></script>
