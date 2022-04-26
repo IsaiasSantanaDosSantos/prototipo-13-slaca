@@ -1,26 +1,74 @@
+/*
+  sm: 576px;
+  md: 768px;
+  lg: 992px;
+  xl: 1200px;
+  xxl: 1400px;
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 
+/* resolução do meu note 1920 x 1080 px
+a imagem do Figma tem 1366 x 768 px */
 .all-page {
   background: #ffffff;
-  padding-left: 0px;
-  padding-right: 0px;
+  display: inline-flex;
 }
 
 aside {
-  position: fixed;
   width: 220px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
+  height: 100vh;
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bi-list {
+  font-size: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+#small-screen-menu {
+  display: none;
+  background: hsl(21, 81%, 96%);
+  height: 68px;
+  z-index: 1;
+}
+
+#small-screen-menu input[type="checkbox"] {
+  display: none;
+}
+
+#small-screen-menu .navbar {
+  padding-top: 0px;
+}
+
+#small-screen-menu nav {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  left: -230px;
+  background-color: #ffffff;
+  width: 220px;
+}
+
+#small-screen-menu nav .navbar-nav {
+  height: 120vh;
+}
+
+#small-screen-menu input[type="checkbox"]:checked ~ nav {
+  transform: translateX(230px);
+}
+.small-screen-menu-logo {
+  width: 220px;
+  height: 258px;
+  background-image: url("../img/dewey-4.png");
 }
 .side-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  /*position: absolute;*/
   height: 536px;
   left: 0%;
   right: 0%;
@@ -28,11 +76,6 @@ aside {
 }
 
 .event-name {
-  /*position: absolute;
-  left: 9.09%;
-  right: 10%;
-  top: 0%;
-  bottom: 0%;*/
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -92,11 +135,264 @@ aside {
   background: #fdf1eb;
   border-left: 5px solid #ed7839;
 }
+.container-content {
+}
 
 header {
-  width: 1146px;
+  width: 100%;
   height: 68px;
-  left: 0px;
-  top: 0px;
   background: #fdf1eb;
+  display: inline-flex;
+  padding-left: 0px;
+}
+
+#initial-text {
+  width: 100%;
+  display: block;
+  padding-left: 36px;
+  margin-left: 11px;
+}
+
+#theme-text {
+  position: relative;
+  top: -2px;
+  width: 100%;
+  height: 16px;
+  padding-top: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #725c5c;
+}
+
+#title {
+  position: relative;
+  max-width: 1200px;
+  height: 26px;
+  bottom: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #725c5c;
+}
+
+#post-id {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  top: -25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #725c5c;
+}
+#btn-div {
+  width: 30%;
+  display: inline-flex;
+}
+
+#language-button {
+  min-width: 100px;
+  height: 34px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 17px;
+  text-align: center;
+}
+
+#linguage {
+  border: none;
+  background-color: #fdf1eb;
+  font-size: 12px;
+}
+
+#login {
+  display: flex;
+  margin-top: 6px;
+  padding: 10px;
+  margin-right: 36px;
+}
+
+.login-texts {
+  width: 100%;
+}
+
+#greetings {
+  height: 18px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #333333;
+}
+
+#email {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #333333;
+  text-align: right;
+  width: 100%;
+}
+
+.login-images {
+  position: relative;
+  margin: 3px;
+  width: 11vh;
+  height: 30px;
+  margin-right: 0px;
+  padding-right: 36px;
+}
+
+#profile-image {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-image: url("../img/women-image.png");
+}
+
+#notification-image {
+  position: absolute;
+  background: #f85959;
+  border-radius: 10px;
+  right: 30px;
+  height: 12px;
+  width: 12px;
+  z-index: 1;
+}
+
+#notification-number {
+  width: 12px;
+  height: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  padding-left: 3px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  #small-screen-menu {
+    display: inline;
+  }
+  aside {
+    display: none;
+  }
+  #small-screen-menu {
+    width: 48px;
+    height: 70px;
+  }
+}
+
+#content-title {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.work-title {
+  width: 77%;
+}
+
+.work-title p {
+  height: 54px;
+  width: 85%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ed7839;
+  padding-left: 38px;
+}
+
+#work-interaction {
+  padding-left: 44px;
+}
+
+#work-interaction img {
+  padding-right: 3px;
+}
+
+#comment-work p {
+  margin-top: 8px;
+  height: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #ed7839;
+}
+
+.video-content {
+  position: relative;
+}
+.container-video {
+  position: relative;
+  left: 36px;
+}
+
+.container-video img {
+  position: absolute;
+  width: 783px;
+  height: 439px;
+  left: 2px;
+  top: 0px;
+
+  background: rgba(141, 53, 6, 0.5);
+  border-radius: 3px;
+}
+
+.video-detail {
+  position: absolute;
+  width: 342px;
+  height: 439px;
+  left: 905px;
+  top: 0px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.detail-title {
+  background: #fdf1eb;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.detail-title p {
+  width: 212px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  color: #4e4e4e;
+  padding-top: 10px;
+  padding-left: 10px ;
 }
