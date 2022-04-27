@@ -366,15 +366,16 @@ header {
   position: relative;
   width: 783px;
   height: 439px;
+  background-image: url("/img/dewey-1.png");
 }
 
 .container-video img {
   position: absolute;
   width: 783px;
   height: 439px;
-  left: 2px;
+  left: 0px;
   top: 0px;
-  background: rgba(141, 53, 6, 0.5);
+  background: rgba(141, 53, 6, 0);
   border-radius: 3px;
 }
 
