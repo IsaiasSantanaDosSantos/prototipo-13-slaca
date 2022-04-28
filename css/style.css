@@ -138,9 +138,10 @@ aside {
 
 .container-content {
   display: block;
-  width: 1314px;
+  width: 1312px;
   height: 100vh;
-  /*border: 1px solid black;*/
+  /* teste 
+  border: 1px solid black;*/
 }
 
 header {
@@ -316,7 +317,7 @@ header {
 #content-title {
   display: inline-flex;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .work-title {
@@ -354,8 +355,8 @@ header {
   font-size: 14px;
   line-height: 25px;
   text-align: right;
-  letter-spacing: 0.09em;
-  word-spacing: 10px;
+  letter-spacing: 0.05em;
+  word-spacing: 2px;
   color: #ed7839;
 }
 
@@ -376,17 +377,6 @@ header {
   left: 0px;
   top: 0px;
   background: rgba(141, 53, 6, 0);
-  border-radius: 3px;
-}
-
-.video-detail {
-  position: absolute;
-  width: 342px;
-  height: 439px;
-  right: 0px;
-  top: 0px;
-  border: 1px solid #ececec;
-  box-sizing: border-box;
   border-radius: 3px;
 }
 
@@ -460,4 +450,66 @@ header {
   line-height: 25px;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+.video-detail {
+  position: absolute;
+  width: 325px;
+  height: 439px;
+  right: 0px;
+  top: 0px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.video-detail-content {
+  display: flex;
+  position: relative;
+}
+
+.detail-text p {
+  width: 255px;
+  height: 330px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  margin: 30px;
+}
+
+.detail-text span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #827c7c;
+}
+
+.detail-scroll {
+  position: relative;
+  width: 4px;
+  height: 330px;
+  right: 7px;
+  top: 30px;
+}
+
+.up-scroll {
+  position: absolute;
+  width: 4px;
+  height: 160px;
+  left: 0px;
+  top: 0px;
+  background: #bfbfbf;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.down-scroll {
+  position: absolute;
+  width: 4px;
+  height: 330px;
+  left: 0px;
+  top: 0px;
+  background: #e7e7e7;
+  border-radius: 5px;
 }
