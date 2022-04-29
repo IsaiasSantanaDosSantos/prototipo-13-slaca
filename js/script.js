@@ -21,7 +21,7 @@ function createTopic() {
 
   startDiscussion.style.display = "none";
   form.style.display = "block";
-  confirmShipping.style.display = "none"
+  confirmShipping.style.display = "none";
 }
 
 /* Inviar pergunta */
@@ -30,6 +30,18 @@ function sendPost() {
   let form = document.getElementById("form-message");
   let confirmShipping = document.getElementById("confirm-shipping");
 
-  form.style.display = "none"
-  confirmShipping.style.display = "block"
+  form.style.display = "none";
+  confirmShipping.style.display = "block";
+}
+
+/* Mostrar comentario */
+
+function showComments() {
+  let showAndHideComments = document.getElementById("hidden-comments");
+
+  if (showAndHideComments.style.display === "none") {
+    showAndHideComments.style.display = "block";
+  } else {
+    showAndHideComments.style.display = "none"
+  }
 }
