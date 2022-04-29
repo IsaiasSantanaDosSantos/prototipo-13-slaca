@@ -4,6 +4,7 @@
   padding: 0px;
   background: #ffffff;
   display: inline-flex;
+  padding-bottom: 50px;
 }
 
 aside {
@@ -333,7 +334,7 @@ header {
   text-align: right;
 }
 
-#work-interaction img {
+#interation-btn img {
   padding-left: 15px;
   height: 2.1rem;
   cursor: pointer;
@@ -604,12 +605,14 @@ header {
 }
 
 .header-speech {
-  width: 100%;
+  width: 100.15%;
   height: 47px;
   background: #fdf1eb;
   border: 1px solid #ececec;
   box-sizing: border-box;
   border-radius: 3px 3px 0px 0px;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 
 .header-speech p {
@@ -811,6 +814,7 @@ header {
 
 /* Tôpico enviado */
 #confirm-shipping {
+  display: none;
   margin: 15px;
 }
 
