@@ -44,6 +44,7 @@
   </head>
   <body>
     <div class="all-page">
+      <!-- Menu -->
       <aside>
         <div class="side-bar">
           <div class="event-name w-100">
@@ -62,7 +63,7 @@
           </nav>
         </div>
       </aside>
-
+      <!-- Menu para tela menores -->
       <div id="small-screen-menu">
         <input type="checkbox" id="checkmenu" />
         <label for="checkmenu">
@@ -84,6 +85,7 @@
         </nav>
       </div>
       <div class="container-content">
+        <!-- Header -->
         <header>
           <div id="initial-text">
             <p id="theme-text">
@@ -122,6 +124,7 @@
             </div>
           </div>
         </header>
+        <!-- Início página -->
         <div class="page-content">
           <div id="content-title">
             <div class="work-title">
@@ -141,6 +144,7 @@
               </div>
             </div>
           </div>
+          <!-- Vídeo -->
           <div class="video-content">
             <div class="container-video">
               <img src="./img/vídeo-overlay.svg" alt="Video filter" />
@@ -152,6 +156,7 @@
               <p id="author">Beatriz Christiane Melo</p>
               <p id="author-detail">FCA / Universidade Estadual de Campinas</p>
             </div>
+            <!-- Detalhe vídeo -->
             <div class="video-detail">
               <div class="detail-title">
                 <p>Detalhes</p>
@@ -177,6 +182,7 @@
               </div>
             </div>
           </div>
+          <!-- Sessão resumo -->
           <div class="container-abstract">
             <div class="abstract-head">
               <p>Resumo</p>
@@ -186,6 +192,48 @@
               <span id="showText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolor iure eveniet harum neque itaque aliquam alias animi officiis impedit sit, doloremque quos praesentium labore deserunt repellendus sunt vitae.<br><br>L orem ipsum dolor sit amet consectetur adipisicing elit. Nam, eos esse, atque modi quos voluptates nobis amet blanditiis deleniti est maxime! Velit placeat iusto eveniet consequuntur, esse officiis fuga excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam magnam adipisci explicabo rerum doloremque tempora, eius temporibus, ipsa ratione architecto quidem exercitationem rem aliquam, perspiciatis itaque. Voluptatem, dignissimos quibusdam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, incidunt ad officia hic quos vel quam modi doloribus placeat dignissimos sit alias ex nam esse. Pariatur corrupti facere natus tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod facere temporibus, sequi harum mollitia modi, eveniet ducimus qui corrupti cupiditate obcaecati? Dolore dolorem magnam temporibus corporis necessitatibus quasi ad?</p>
               </span>
                 
+            </div>
+          </div>
+          <!-- Sessão discussões -->
+          <div class="speech-container">
+            <div class="header-speech">
+              <p>Discussões</p>
+            </div >
+            <div class="all-content-abstract">
+              <!-- Início compartilhamento -->
+              <div id="sharing-session">
+                <p>Compartilhe suas ideias ou dúvidas com os autores!</p>
+                <div class="sharing-icons">
+                  <div id="sharing-icon-1"><img src="./img/sharing-icon-1.png" alt="Ícone de compartilhamento 1"/></div>
+                  <div id="sharing-icon-2"><img src="./img/sharing-icon-2.png" alt="Ícone de compartilhamento 2"/></div>
+                  <div id="sharing-icon-3"><img src="./img/sharing-icon-3.png" alt="Ícone de compartilhamento 3"/></div>
+                </div>
+                <div class="ask-author">
+                  <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                </div>
+                <div class="btn-box">
+                  <button type="button" onclick="createTopic()"><img src="./img/create-topic-icon.svg" alt="Botão de criar tópico"/> criar tópico</button>
+                </div>
+              </div>
+              </div>
+              <!-- Formulário -->
+              <div id="form-message">
+                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                <label>Assunto</label>
+                <input disabled type="text" id="message-subject" placeholder="Defina um tópico sucinto para notificar os autores..."/>
+                <label>Conteúdo</label>
+                <input disabled type="text" id="message-content"/>
+                <div class="icon-btn-form">
+                  <div class="icon-form">
+                    <div id="shape-1"></div>
+                    <div id="shape-2"></div>
+                  </div>
+                  <div class="btn-form">
+                    <button>Enviar</button>
+                  </div>
+                </div>
+                <hr>
+              </div>
             </div>
           </div>
         </div>
