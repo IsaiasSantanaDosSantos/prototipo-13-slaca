@@ -1,5 +1,5 @@
 # Prototipo 13 SLACA
-Teste de técnico de desenvolvimento de uma web page.
+Teste técnico de desenvolvimento de uma web page.
 
 ### Hospedei o projeto no Vercel
 
